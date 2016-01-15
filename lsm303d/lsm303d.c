@@ -146,7 +146,7 @@ static ssize_t show_mag_resolution(struct device *dev, struct device_attribute *
 
 	return count;
 }
-static DEVICE_ATTR(mag_resolution, S_IRUGO, show_mag_resolution, store_mag_resolution);
+static DEVICE_ATTR(mag_resolution, 0664, show_mag_resolution, store_mag_resolution);
 
 
 #define LSM303D_ATTR(name, lbound, ubound, reg)\
@@ -184,7 +184,7 @@ static ssize_t show_ ## name(struct device *dev, struct device_attribute *dev_at
 \
 	return count;\
 }\
-static DEVICE_ATTR(name, S_IRUGO, show_ ## name, store_ ## name)
+static DEVICE_ATTR(name, 0664, show_ ## name, store_ ## name)
 
 LSM303D_ATTR(block_data_update, BDU_OFF, BDU_ON, CTRL1);
 LSM303D_ATTR(acc_rate, AODR_OFF, AODR_1600HZ, CTRL1);

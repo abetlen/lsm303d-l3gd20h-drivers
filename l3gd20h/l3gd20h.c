@@ -122,7 +122,7 @@ static ssize_t show_ ## name(struct device *dev, struct device_attribute *dev_at
 \
 	return count;\
 }\
-static DEVICE_ATTR(name, S_IRUGO, show_ ## name, store_ ## name)
+static DEVICE_ATTR(name, 0664, show_ ## name, store_ ## name)
 
 L3GD20H_ATTR(block_data_update, BDU_OFF, BDU_ON, CTRL4);
 L3GD20H_ATTR(gyro_rate, GODR_MIN, GODR_MIN, CTRL1);
