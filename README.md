@@ -21,37 +21,18 @@ Insert the drivers:
 ```
 
 Conversion Tables
-------
+-----------------
 
-Accelerometer:
-
-FS(g) | mg/LSB
-------|-------
-2     | 0.061
-4     | 0.122
-6     | 0.183
-8     | 0.244
-16    | 0.732
-
-Magnetometer:
-
-FS(gauss) | mgauss/LSB
-----------|-----------
-2         | 0.080
-4         | 0.160
-8         | 0.320
-12        | 0.479
-
-Gyroscope:
-
-FS(dps) | mdps/LSB
---------|---------
-245     | 8.75
-500     | 17.50
-2000    | 70.00
+Accelerometer(g) | mg/LSB | Magnetometer(gauss) | mgauss/LSB | Gyroscope(dps) | mdps/LSB
+-----------------|--------|---------------------|------------|----------------|---------
+2                | 0.061  | 2                   | 0.080      | 245            | 8.75
+4                | 0.122  | 4                   | 0.160      | 500            | 17.50
+6                | 0.183  | 8                   | 0.320      | 2000           | 70.00
+8                | 0.244  | 12                  | 0.479      |                |
+16               | 0.732  |                     |            |                |
 
 Resources
-----------
+---------
 
 - [L3GD20H
   Datasheet](https://www.pololu.com/file/download/L3GD20H.pdf?file_id=0J731)
