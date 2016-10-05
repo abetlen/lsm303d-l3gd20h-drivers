@@ -1,7 +1,7 @@
 LSM303D / L3GD20H I2C Drivers
 =============================
 
-[![Travis branch](https://img.shields.io/travis/abetlen/lsm303d-l3gd20h-drivers/master.svg?maxAge=2592000)]()
+![Travis branch](https://api.travis-ci.org/abetlen/lsm303d-l3gd20h-drivers.svg?branch=master)
 
 Character device drivers for the LSM303D and L3GD20H over an I2C interface.
 
