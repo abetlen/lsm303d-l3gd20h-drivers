@@ -1,4 +1,9 @@
 sudo: required
 
+language: c
+
+before_install:
+    - sudo apt-get -y install linux-headers-$(uname -r)
+
 install:
     - make drivers
