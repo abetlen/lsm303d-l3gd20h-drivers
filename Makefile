@@ -6,5 +6,7 @@ SUBDIRS= $(DRIVERS) $(BOARD)
 
 all: $(SUBDIRS)
 
+drivers: $(DRIVERS)
+
 $(SUBDIRS):
 	$(MAKE) -C $@
